@@ -1,0 +1,13 @@
+import random, time
+def mtool(q):
+    x = input("> ").lower().rstrip()
+    return x
+def mclear():
+    print('\033[2J\033[H', end='')
+def mtime(a):
+    time.sleep(a)
+def mrandomint(a, b):
+    return random.randint(a, b)
+def mrandomice(a, b, c):
+    return random.choice((a, b, c)
+# Micro lib
