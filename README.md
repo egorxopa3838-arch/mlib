@@ -1,3 +1,3 @@
 # mlib
-micro library test
+*micro library test
 # ggg
