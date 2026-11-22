@@ -9,5 +9,5 @@ def mtime(a):
 def mrandomint(a, b):
     return random.randint(a, b)
 def mrandomice(a, b, c):
-    return random.choice((a, b, c)
+    return random.choice((a, b, c))
 # Micro lib
