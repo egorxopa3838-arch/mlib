@@ -14,7 +14,7 @@ def mmenu(options):
     for i, opt in enumerate(options, 1):
         print(f"{i}. {opt}")
     try:
-        return int(input("мяу> ")) - 1
+        return int(input("cat> ")) - 1
     except ValueError:
         return -1
 def mprint(text, color="green"):
