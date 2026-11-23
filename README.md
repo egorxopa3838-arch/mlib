@@ -1,3 +1,6 @@
 # mlib
 -micro library test
-# Additional **Null**
+# How it works
+-from mlib import mrandomint
+e = mrandomint(1, 5)
+print(f"numbers {e}")
