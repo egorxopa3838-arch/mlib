@@ -1,7 +1,7 @@
-import random, time
-def mtool(q):
-    x = input("> ").lower().rstrip()
-    return x
+#mlib. py
+import random, time, math, sys
+def mtool():
+    return input("> ").lower().rstrip()
 def mclear():
     print('\033[2J\033[H', end='')
 def mtime(a):
@@ -20,5 +20,18 @@ def mmenu(options):
 def mprint(text, color="green"):
     colors = {"green": "\033[92m", "red": "\033[91m", "yellow": "\033[93m", "blue": "\033[94m"}
     print(f"{colors.get(color, '')}{text}\033[0m")
-
+def advertisement(a, adver):
+    for _ in range(a):
+        print(adver) # useless? I know
+def mmath(cst, a):
+    if cst == "cos":
+        return math.cos(a)
+    elif cst == "sin":
+        return math.sin(a)
+    elif cst == "tan":
+        return math.tan(a)
+    else:
+        raise ValueError(f"no function: {cst}")
+def mexit(code):
+    sys.exit(code)
 # Micro Lib
