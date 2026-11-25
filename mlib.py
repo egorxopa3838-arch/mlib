@@ -1,4 +1,4 @@
-#mlib. py
+#mlib.py
 import random, time, math, sys
 def mtool():
     return input("> ").lower().rstrip()
@@ -34,4 +34,4 @@ def mmath(cst, a):
         raise ValueError(f"no function: {cst}")
 def mexit(code):
     sys.exit(code)
-# Micro Lib
+# Micro lib
