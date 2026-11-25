@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlib-egor"
+version = "0.1.3"
+description = "Micro library for Myrland projects"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "Egor Babanakov"}]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mlib*"]
