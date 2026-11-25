@@ -34,4 +34,4 @@ def mmath(cst, a):
         raise ValueError(f"no function: {cst}")
 def mexit(code):
     sys.exit(code)
-# Micro lib
+# Micro Lib
