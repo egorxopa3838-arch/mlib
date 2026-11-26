@@ -1,4 +1,4 @@
-#mlib.py
+#mlib. py
 import random, time, math, sys
 def mtool():
     return input("> ").lower().rstrip()
@@ -34,4 +34,20 @@ def mmath(cst, a):
         raise ValueError(f"no function: {cst}")
 def mexit(code):
     sys.exit(code)
+
+def relu(x):
+    return max(0.0, x)
+def relu_vec(vec):
+    return [relu(v) for v in vec]
+def dot(a, b):
+    if len(a) != len(b):
+        raise ValueError("")
+    return sum(x * y for x, y in zip(a, b))
+
+def mtranspose(matrix):
+    if not matrix:
+        return []
+    rows = len(matrix)
+    cols = len(matrix[0])
+    return [[matrix[r][c] for r in range(rows)] for c in range(cols)]
 # Micro lib
